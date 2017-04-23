@@ -1,0 +1,8 @@
+no ipv4 access-list VTY-ACL
+ipv4 access-list VTY-ACL
+ permit ipv4 host 192.168.178.6 any
+ permit tcp any any eq 80
+ permit tcp any any eq 443
+ permit tcp any any eq 22
+ permit ipv4 188.88.88.0 0.0.0.128 192.168.1.0 0.0.0.255
+commit

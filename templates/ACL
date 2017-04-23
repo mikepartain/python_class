@@ -1,0 +1,7 @@
+no ip access-list extended VTY-ACL
+ip access-list extended VTY-ACL
+ permit ip host 192.168.178.6 any
+ permit tcp any any eq 80
+ permit tcp any any eq 443
+ permit tcp any any eq 22
+ permit ip 188.88.88.0 0.0.0.128 192.168.1.0 0.0.0.255
