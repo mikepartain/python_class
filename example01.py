@@ -9,7 +9,7 @@ import os
 from netmiko import ConnectHandler
 os.system('clear')
 
-
+# June 18 0905
 ios = {
         'device_type': 'cisco_ios',
         'ip': '192.168.178.28',
