@@ -34,12 +34,4 @@ def scan(network):
     #     print '%s' % ip
 
 
-    # from scapy.all import *
-    # conf.verb = 0
-    # for ip in range(0, 256):
-    #     packet = IP(dst="192.168.0." + str(ip), ttl=20) / ICMP()
-    #     reply = sr1(packet)
-    #     if "192.168." in reply.src:
-    #         print reply.src, "is online"
-
 main()

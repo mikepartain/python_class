@@ -56,6 +56,7 @@ def ios_device_login():
     #running_config = open(config_dir+hostname, 'w')
 
 def xr_device_login():
+    print '#' * 30 + 'Logging into %s' % (dev_hostname) + '#' * 30
     global net_connect, hostname, running_config
     net_connect = ConnectHandler(**ios)
     hostname = net_connect.find_prompt().replace('#','').split(':',-1)[1]
