@@ -77,7 +77,7 @@ def xr_set_hostname(dev_hostname):
 
 def net_disconnect():
     print '#'*30+'Disconnecting from host'+'#'*30
-    print 'Disconnecting from %s...' % (hostname)
+    print 'Disconnecting from %s...' % (dev_hostname)
     net_connect.disconnect()
     print '\n\n'
 

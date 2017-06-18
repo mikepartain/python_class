@@ -12,7 +12,7 @@ os.system('clear')
 # June 18 0905
 ios = {
         'device_type': 'cisco_ios',
-        'ip': '192.168.178.28',
+        'ip': '172.16.5.101',
         'username': 'cisco',
         'password': 'cisco',
     }
