@@ -1,4 +1,4 @@
-#!/home/mikepartain/GIT/stig/bin/python
+#!/Users/mikepartain/git-hub/python/bin/python
 '''
 This script will push an ACL to a single device.  The ACL is stored in templates/ACL,
 it will login and copy the lines in the script to the device it is connected to.

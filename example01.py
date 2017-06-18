@@ -1,4 +1,4 @@
-#!/home/mikepartain/GIT/stig/bin/python
+#!/Users/mikepartain/git-hub/python/bin/python
 '''
 This script is just to show some basic examples of using Netmiko to login to devices.
 This script will login to a single device with cisco/cisco and run the show ip int brief

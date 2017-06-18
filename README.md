@@ -1,7 +1,6 @@
 # python_class
 Scripts to review during the Python Class
 
-
 I am using EVE-NG with a basic topology, 1 - IOL, 1 - L3 vIOS, 1, - L2 vIOS, and 1 - IOSXRv
 All devices are set for DHCP and connected to a cloud network.  There is a device_list.txt
 file that contains the following:

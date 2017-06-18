@@ -1,4 +1,4 @@
-#!/home/mikepartain/GIT/stig/bin/python
+#!/Users/mikepartain/git-hub/python/bin/python
 '''
 This script will interact with two three IOS devices and one IOS-XR based on the 
 list of devices that are in the device_list.txt file in the local directory.
