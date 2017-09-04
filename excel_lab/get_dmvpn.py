@@ -5,6 +5,8 @@ os.system('clear')
 
 wb = load_workbook('workbook.xlsx')
 ws_list = {}
+device = {}
+
 def select_sheet():
     ws_check = 'False'
     ws_range=[]

@@ -32,6 +32,7 @@ def select_sheet():
         select_sheet()
     
 def get_rows_from_sheet(wsname):
+    global ws_range
     rows_data = []
     ws_range=[]
     ws=wb.get_sheet_by_name(wsname)
@@ -40,64 +41,16 @@ def get_rows_from_sheet(wsname):
         i = i+1
         if i not in ws_range:
             ws_range.append(i)
-    for column in ws.iter_cols(min_row=2, min_col = 1, max_col=4):
-        print column[0].value, column[1].value, column[2].value
-        #for cell in column:
-            #print(cell.value)
-
-'''
-
-    #for row in ws.iter_rows(min_row=2, max_col=5, max_row=2):
-    for row in ws.iter_rows(min_row=2, max_col=4):
-        for cell in row:
-            print cell.value,
-
-'''
 
 
+    # for i in range(ws.max_row):
+    print len(ws_range)
+    print ws.max_row
 
 
-'''
-    for row in ws.iter_rows():
-        yield [cell.value for cell in row] 
-    pprint(list(iter_rows(ws)))
+    for cell in ws.iter_rows(min_row=2, max_col=4):
+        print cell[0].value.ljust(20), cell[1].value.ljust(10),cell[2].value.ljust(30),cell[3].value
 
-
-
-    for index, row in enumerate(ws.iter_rows()):
-        print row
-        for cell in row:
-            print(ws.cell(row=index + 1, column=1).value, cell.value)
-
-
-
-    #    for (ws_num, ws) in zip(range(len(wb.get_sheet_names())), wb.get_sheet_names()):
-
-    for row in ws.iter_rows():
-        for column in row:
-            print column.value
-
-    for rows in ws.rows:
-        for columns in rows:
-            print columns.value,
-            if columns.value not in rows_data:
-                rows_data.append(columns.value)
-
-    for host in rows_data:
-        print host, 
-'''
-
-
-
-def get_row_from_sheet(wsname):
-    row_data = []
-    print 'Thank you for selecting %s.' % (wsname)
-    ws=wb.get_sheet_by_name(wsname)
-    #print ws.max_row 
-    data = [ws.cell(row=9,column=i).value for i in range(1,9)]
-    print data[0], data[1], data[2], data[3]
-    for host_items in row_data:
-        print host_items,
 
 
 select_sheet()
